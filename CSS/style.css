@@ -1,0 +1,262 @@
+/*Import*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    flex: 1;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: 5px;
+}
+
+.anim-pop {
+    animation: 2s anim-pop ease-out;
+}
+
+@keyframes anim-pop {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+nav {
+    flex: 2;
+}
+
+.nav-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+.nav-link {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.nav-link:link { text-decoration: none; }
+.nav-link:visited { text-decoration: none; }
+.nav-link:active { text-decoration: none; }
+
+.nav-link:hover {
+    text-decoration: none;
+    color: #332FD0;
+}
+
+.icons {
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.presentation {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.introduction {
+    flex: 1
+}
+
+.intro-text h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    color: black;
+    letter-spacing: .2rem;
+}
+
+.anim-left {
+    animation: 2s anim-left ease-out;
+}
+
+@keyframes anim-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-80%);
+    }
+    20% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.anim-right {
+    animation: 2s anim-right ease-out;
+}
+
+@keyframes anim-right {
+    0% {
+        opacity: 0;
+        transform: translateX(80%);
+    }
+    20% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.intro-text p {
+    margin-top: 30px;
+    font-size: 22px;
+    color: lightslategray;
+}
+
+.product {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	height: 60vh;
+}
+.product img {
+	height: 120%;
+    rotate: 10deg;
+    margin-top: -60px;
+    margin-right: 250px;
+}
+
+.cta {
+    padding: 15px 0px 0px 0px;
+}
+
+.cta-add {
+    background: #332FD0;
+    width: 170px;
+    height: 55px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 10px 10px 10px #DDDDDD;
+}
+
+.cta-details {
+    border: 2px solid #332FD0;
+    width: 170px;
+    height: 55px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 30px 0px 0px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    box-shadow: 10px 10px 10px #DDDDDD;
+}
+
+.anim-bottom {
+    animation: 3s anim-bottom ease-out;
+}
+
+@keyframes anim-bottom {
+    0% {
+        opacity: 0;
+        transform: translateY(150%);
+    }
+    20% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.bars {
+	flex: 0.5;
+    position: absolute;
+    right: 500px;
+    z-index: -1;
+    rotate: 150deg;
+}
+
+.bar {
+    border-radius: 25px;
+    margin: 60px;
+}
+  
+  
+.b1 {
+    background: linear-gradient(to left, #8A2BE2, #3C79F5);
+    width: 400px;
+    height: 55px;
+}
+.b2 {
+    margin-left: -75px;
+    background: linear-gradient(to right, #FFB4B4, #332FD0);
+    width: 700px;
+    height: 55px;
+}
+.b3 {
+    margin-left: -50px;
+    background: linear-gradient(to right, #8A2BE2, #3C79F5);
+    width: 710px;
+    height: 55px;
+}
+.b4 {
+    background: linear-gradient(to right, #332FD0, #FFB4B4);
+    width: 450px;
+    height: 55px;
+}
+
